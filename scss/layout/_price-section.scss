@@ -1,0 +1,72 @@
+.price-section {
+      margin-bottom: 163px;
+
+
+  &__title {
+    color: #843fd0;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    width: 540px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 95px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    background-color: var(--color-white);
+    width: 362px;
+    text-align: center;
+    padding: 60px 30px;
+    box-shadow: 0px 36px 40px 0px #0000001a;
+    box-shadow: -3px 1px 70px 0px #00000026;
+    border-radius: 24px;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  }
+
+    &__item:hover {
+transform: scale(1.1); 
+
+    }
+
+    &__price:hover {
+        color: var(--color-seconary);
+    }
+
+    &__item:hover .button-price{
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
+
+  &__name {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  &__price {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__time {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--color-seconary);
+  }
+
+  &__desk {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+}

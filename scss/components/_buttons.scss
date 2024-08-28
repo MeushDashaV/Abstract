@@ -31,12 +31,42 @@
   box-shadow: 5px 26px 15px 0px #00000024;
   transition: background-color 1s, color 1s;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
-.carousel-button-left, 
+.carousel-button-left,
 .carousel-button-right {
-background-color: transparent;
-border: none;
+  background-color: transparent;
+  border: none;
+}
+
+.button-price {
+  width: 223px;
+  height: 44px;
+  border: solid 1px var(--color-main);
+  background-color: transparent;
+  border-radius: 24px;
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--color-main);
+  cursor: pointer;
+}
+
+.button-using {
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 24px;
+  height: 40px;
+  width: 186px;
+  color: var(--color-seconary);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 18px;
+  transition: background-color 1s, color 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
