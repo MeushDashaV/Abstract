@@ -1,0 +1,43 @@
+.rewiews-section {
+  padding-top: 130px;
+  &__container {
+    width: 100%;
+    max-width: 2000px !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 113px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+  &__list {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__item {
+    width: 486px;
+    padding: 54px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-size: 21px;
+    margin: 0;
+  }
+
+  &__desk {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

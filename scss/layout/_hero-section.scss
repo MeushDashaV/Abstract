@@ -1,0 +1,57 @@
+.hero-section {
+  padding: 287px 0;
+  background-image: url('/img/bckg-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: -10;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+    overflow: visible;
+    margin-bottom: 98px;
+
+  &__text {
+    color: var(--color-white);
+    z-index: 10;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__illustration {
+    margin-top: -80px;
+  }
+}
+
+.hero-section::before,
+.hero-section::after {
+  position: absolute;
+  content: '';
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  top: 0;
+  background-image: url('/img/lines.png');
+  width: 1149px;
+  height: 529px;
+  z-index: -1;
+}
+.hero-section::after {
+  bottom: 0;
+  top: 530px;
+  background-image: url('/img/line.png');
+  width: 100%;
+  height: 225px;
+  z-index: -1;
+}

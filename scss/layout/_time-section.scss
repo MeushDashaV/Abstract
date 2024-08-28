@@ -1,0 +1,24 @@
+.time-section {
+  &__container {
+    display: flex;
+    gap: 383px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__text {
+    margin: auto;
+    width: 367px;
+  }
+
+  &__phone {
+    flex: 0 0 auto;
+  }
+
+  &__img {
+    fill: var(--color-white);
+    z-index: 4;
+    padding-left: 8px;
+  }
+
+}
