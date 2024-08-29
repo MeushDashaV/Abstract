@@ -13,6 +13,12 @@
     width: 367px;
   }
 
+  &__text h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
   &__phone {
     flex: 0 0 auto;
   }
