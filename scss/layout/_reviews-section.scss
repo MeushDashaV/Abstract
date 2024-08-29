@@ -1,11 +1,12 @@
-.rewiews-section {
+.reviews-section {
   padding-top: 130px;
   position: relative;
+  overflow: hidden;
 
   &__gradient {
     height: 274px;
     width: 1330px;
-    background: linear-gradient(180deg, #422E8C 24.09%, #812AD2 100%);
+    background: linear-gradient(180deg, #422e8c 24.09%, #812ad2 100%);
     max-width: none;
     margin: 0 auto;
     position: absolute;
@@ -34,12 +35,16 @@
   }
 
   &__list {
+    width: 2000px !important;
     display: flex;
     gap: 36px;
-    overflow: hidden; /* Приховуємо обрізані частини */
-    justify-content: center; /* Вирівнювання по центру */
+    overflow: hidden;
+    justify-content: center;
     width: 100%;
     position: relative;
+    left: -430px;
+    right: 0;
+    padding-bottom: 232px;
   }
 
   &__item {
@@ -53,13 +58,32 @@
     position: relative;
     height: 256px;
     padding: 0 54px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
   }
 
-  &__item.active {
-    height: 285px; /* Центральна картка буде більшою */
+  &__item-long {
+    width: 486px;
+    flex: 0 0 auto;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 43.6px 0px #00000040;
+    margin-top: 123px;
+    border-radius: 24px;
+    transition: transform 0.3s ease, height 0.3s ease;
+    position: relative;
+    height: 285px;
+    padding: 0 54px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
   }
 
   &__item img {
+    margin-top: -35px;
+  }
+
+  &__item-long img {
     margin-top: -35px;
   }
 

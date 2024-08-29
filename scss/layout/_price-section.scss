@@ -1,6 +1,5 @@
 .price-section {
-      margin-bottom: 163px;
-
+  margin-bottom: 163px;
 
   &__title {
     color: #843fd0;
@@ -30,20 +29,18 @@
     transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   }
 
-    &__item:hover {
-transform: scale(1.1); 
+  &__item:hover {
+    transform: scale(1.1);
+  }
 
-    }
+  &__item:hover .button-price {
+    background-color: var(--color-main);
+    color: var(--color-white);
+  }
 
-    &__price:hover {
-        color: var(--color-seconary);
-    }
-
-    &__item:hover .button-price{
-  background-color: var(--color-main);
-  color: var(--color-white);
-}
-
+  &__item:hover &__price {
+    color: var(--color-seconary);
+  }
 
   &__name {
     font-size: 25px;

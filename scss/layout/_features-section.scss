@@ -1,8 +1,10 @@
 .features-section {
   padding: 98px 0 200px 0;
+  height: 500px;
 
   &__container {
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
     gap: 20px;
   }
@@ -14,6 +16,13 @@
     border-radius: 24px;
     box-shadow: 6px 68px 111px 0px #2a1e4933;
     box-shadow: -6px -1px 64.3px 0px #26203526;
+    height: 212px;
+    transition: height 0.3s ease;
+    overflow: hidden;
+  }
+
+  &__card:hover {
+    height: 300px;
   }
 
   &__title {
@@ -28,11 +37,11 @@
   }
 
   &__lern-block {
-    padding-right: 20px;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: none;
+  }
+
+  &__card:hover &__lern-block {
+    display: block; /* Показуємо кнопку при ховері */
   }
 
   &__lern {
