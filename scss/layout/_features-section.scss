@@ -69,9 +69,9 @@
   .features-section {
     padding-top: 50px;
     &__container {
-      flex-direction: column; /* Розташовує картки в колонку */
-      align-items: center; /* Центрує картки по горизонталі */
-      justify-content: center; /* Центрує картки по вертикалі */
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
       min-height: 100vh;
       margin-top: 50px;
     }
