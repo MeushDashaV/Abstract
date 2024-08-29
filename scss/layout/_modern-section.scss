@@ -16,6 +16,7 @@
   }
 
   &__circle {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,11 +27,11 @@
     transform: translate(-50%, -50%);
     filter: blur(20px);
     opacity: 0;
-    animation: expand  4s infinite;
+    animation: expand 4s infinite;
     z-index: -1;
   }
 
-  @keyframes expand  {
+  @keyframes expand {
     0% {
       opacity: 0;
       transform: translate(-50%, -50%) scale(0.5);
@@ -52,7 +53,7 @@
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
-    height: 540px;
+    height: 550px;
     margin-right: -180px;
     position: relative;
     max-width: 100%;
@@ -88,5 +89,19 @@
     width: 22px;
     height: 22px;
     z-index: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .modern-section {
+    &__container {
+      flex-direction: column;
+    }
+    &__circle {
+      display: none;
+    }
+    &__cards img {
+      width: 400px;
+    }
   }
 }

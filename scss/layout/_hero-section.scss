@@ -86,3 +86,26 @@
   height: 225px;
   z-index: -1;
 }
+
+@media (max-width: 400px) {
+  .hero-section {
+    padding-top: 90px;
+
+    &__container {
+      display: block;
+      padding-top: 90px;
+    }
+
+    &__text {
+      width: 350px;
+      margin: 0 auto;
+    }
+
+    &__illustration {
+      margin-top: 0;
+      text-align: center;
+      padding-left: 25px;
+      margin: 0 auto;
+    }
+  }
+}
