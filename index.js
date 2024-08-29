@@ -132,3 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ініціалізація каруселі
   handleResize();
 });
+
+
+
