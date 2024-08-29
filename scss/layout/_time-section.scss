@@ -23,14 +23,14 @@
     padding-left: 8px;
   }
 
-
   &__circle {
+    display: block;
     position: absolute;
     top: 50%;
     left: 20%;
     width: 200px;
     height: 200px;
-    background-color: #3D2E87;
+    background-color: #3d2e87;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     filter: blur(40px);
@@ -53,5 +53,21 @@
       transform: translate(-50%, -50%) scale(0.5);
     }
   }
+}
 
+@media (max-width: 400px) {
+  .time-section {
+    display: block;
+
+    &__circle {
+      display: none;
+    }
+
+    &__phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
 }

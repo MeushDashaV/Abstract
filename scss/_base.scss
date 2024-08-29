@@ -39,15 +39,20 @@ body {
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
-
 }
 
 .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   overflow: visible;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .bold {

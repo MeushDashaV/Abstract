@@ -96,12 +96,24 @@
   .modern-section {
     &__container {
       flex-direction: column;
+      margin-top: 250px;
     }
     &__circle {
       display: none;
     }
     &__cards img {
       width: 400px;
+      order: 1;
+    }
+
+    &__cards {
+      margin-right: -50px;
+      padding: 0;
+    }
+
+    &__text {
+      padding: 0;
+      order: 2;
     }
   }
 }
