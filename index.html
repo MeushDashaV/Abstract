@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
@@ -37,6 +37,7 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-section__container">
+            <div class="hero-section__circle"></div>
             <div class="hero-section__text">
               <h3 class="hero-section__title">
                 Introducing <span class="bold">Abstract</span> <br />
@@ -50,7 +51,7 @@
           </div>
         </div>
       </section>
-      <section class="features-section">
+      <section id="features" class="features-section">
         <div class="container">
           <div class="features-section__container">
             <div class="features-section__card">
@@ -102,16 +103,20 @@
               </p>
               <a class="modern-section__lern" href="#">Learn More </a>
             </div>
+
             <div class="modern-section__cards">
+              <div class="modern-section__circle"></div>
               <img src="./img/citygroup-stats.png" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section class="time-section">
+      <section id="time" class="time-section">
         <div class="container">
           <div class="time-section__container">
             <div class="time-section__phone">
+              <div class="time-section__circle"></div>
+
               <img src="./img/save-time.svg" alt="" />
             </div>
             <div class="time-section__text">
@@ -217,7 +222,7 @@
         </div>
       </section>
 
-      <section class="price-section">
+      <section id="price" class="price-section">
         <div class="container">
           <div class="price-section__text">
             <h1 class="price-section__title">Pricing</h1>
@@ -306,10 +311,10 @@
             <div class="footer__nav-block">
               <h3 class="footer__title">About us</h3>
               <ul class="footer__menu">
-                <li><a class="footer__link" href="#"> Home </a></li>
-                <li><a class="footer__link" href="#"> Features </a></li>
-                <li><a class="footer__link" href="#"> Docs </a></li>
-                <li><a class="footer__link" href="#"> Pricing </a></li>
+                <li><a class="footer__link" href="#header"> Home </a></li>
+                <li><a class="footer__link" href="#features"> Features </a></li>
+                <li><a class="footer__link" href="#time"> Docs </a></li>
+                <li><a class="footer__link" href="#price"> Pricing </a></li>
               </ul>
             </div>
             <div class="footer__nav-block">

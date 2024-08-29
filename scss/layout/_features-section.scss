@@ -1,6 +1,6 @@
 .features-section {
-  padding: 98px 0 200px 0;
-  height: 500px;
+  padding-top: 98px;
+  height: 350px;
 
   &__container {
     display: flex;
@@ -19,6 +19,8 @@
     height: 212px;
     transition: height 0.3s ease;
     overflow: hidden;
+
+
   }
 
   &__card:hover {
@@ -41,7 +43,7 @@
   }
 
   &__card:hover &__lern-block {
-    display: block; /* Показуємо кнопку при ховері */
+    display: block; 
   }
 
   &__lern {
@@ -63,4 +65,5 @@
     height: 22px;
     z-index: 2;
   }
+
 }

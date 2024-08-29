@@ -4,6 +4,8 @@
     gap: 383px;
     align-items: center;
     justify-content: space-around;
+    overflow: visible;
+    position: relative;
   }
 
   &__text {
@@ -19,6 +21,37 @@
     fill: var(--color-white);
     z-index: 4;
     padding-left: 8px;
+  }
+
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 200px;
+    height: 200px;
+    background-color: #3D2E87;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(40px);
+    opacity: 0;
+    animation: pulse 4s infinite;
+    z-index: -1;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(3);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
   }
 
 }

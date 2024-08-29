@@ -1,15 +1,50 @@
 .modern-section {
-//   background-image: url(/img/bckg-modern1.png);
-//   background-repeat: no-repeat;
-//   background-position: center right;
-//   background-size: contain;
+  //   background-image: url(/img/bckg-modern1.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center right;
+  //   background-size: contain;
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 60px;
 
   &__container {
     display: flex;
     align-items: center;
     width: 100%;
     padding-bottom: 100px;
+    position: relative;
   }
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(132, 63, 208, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(20px);
+    opacity: 0;
+    animation: expand  4s infinite;
+    z-index: -1;
+  }
+
+  @keyframes expand  {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(3.5);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+  }
+
   &__cards {
     display: flex;
     align-items: center;
