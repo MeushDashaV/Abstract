@@ -116,10 +116,10 @@
     }
 
     &__list {
-      width: 352px; /* Переконатися, що ширина в мобільній версії правильна */
+      width: 400px;
       padding-top: 71px;
       padding-bottom: 120px;
-
+      overflow: hidden;
     }
 
     &__item {
