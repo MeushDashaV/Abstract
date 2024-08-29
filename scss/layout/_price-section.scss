@@ -67,3 +67,25 @@
     line-height: 1.8;
   }
 }
+
+
+@media (max-width: 400px) {
+  .price-section {
+      &__list {
+        display: block;
+      }
+
+      &__title {
+        width: 110px;
+      }
+
+      &__text p {
+        width: 348px;
+        text-align: start;
+      }
+
+      &__item {
+        margin-bottom: 28px;
+      }
+  }
+}

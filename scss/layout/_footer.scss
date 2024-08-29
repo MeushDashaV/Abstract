@@ -25,6 +25,7 @@
   &__copyrights {
     font-size: 16px;
     font-weight: 500;
+    display: block;
   }
 
   &__link {
@@ -40,10 +41,9 @@
 
   &__nav-menu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) auto; /* Три колонки з рівною шириною та одна для фіксованої ширини */
-    gap: 62px; /* Відступи між колонками */
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 62px;
   }
-
 
   &__nav-block {
     width: 95px;
@@ -72,5 +72,74 @@
 
   &__lang-btn {
     cursor: pointer;
+  }
+
+  &__copyrights-mob {
+    display: none;
+  }
+
+  &__language-block-mob {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    &__container {
+      display: block;
+    }
+
+    &__nav-menu {
+      gap: 32px;
+    }
+
+    &__nav-blog {
+      width: 100px;
+    }
+
+    &__copyrights {
+      display: none;
+    }
+
+    &__copyrights-mob {
+      margin-top: 67px;
+      margin-bottom: 57px;
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &__language-block {
+      display: none;
+    }
+    &__language {
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    &__language-block-mob {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &__block-logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__store {
+      padding-bottom: 44px;
+      justify-content: space-between;
+    }
+  }
+
+  .footer img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 }

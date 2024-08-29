@@ -102,3 +102,13 @@
     font-weight: 700;
   }
 }
+
+
+@media (max-width: 400px) {
+  .reviews-section {
+    &__title {
+      display: block;
+      color: var(--color-seconary);
+    }
+  }
+}
