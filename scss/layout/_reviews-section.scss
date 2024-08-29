@@ -35,16 +35,14 @@
   }
 
   &__list {
-    width: 2000px !important;
     display: flex;
     gap: 36px;
-    overflow: hidden;
+    overflow: visible;
     justify-content: center;
     width: 100%;
-    position: relative;
-    left: -430px;
-    right: 0;
     padding-bottom: 232px;
+    position: relative; 
+    left: 0; 
   }
 
   &__item {
@@ -56,35 +54,20 @@
     border-radius: 24px;
     transition: transform 0.3s ease, height 0.3s ease;
     position: relative;
-    height: 256px;
+    height: 256px; /* Висота для крайніх карток */
     padding: 0 54px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
-  }
 
-  &__item-long {
-    width: 486px;
-    flex: 0 0 auto;
-    background-color: var(--color-white);
-    box-shadow: 0px 4px 43.6px 0px #00000040;
-    margin-top: 123px;
-    border-radius: 24px;
-    transition: transform 0.3s ease, height 0.3s ease;
-    position: relative;
-    height: 285px;
-    padding: 0 54px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.8;
-  }
+    &--center {
+      height: 276px; /* Висота для середньої картки */
+      transform: translateY(-10px);
+    }
 
-  &__item img {
-    margin-top: -35px;
-  }
-
-  &__item-long img {
-    margin-top: -35px;
+    img {
+      margin-top: -35px;
+    }
   }
 
   &__block {
@@ -101,10 +84,8 @@
     font-size: 16px;
     font-weight: 700;
   }
-}
 
-@media (max-width: 400px) {
-  .reviews-section {
+  @media (max-width: 400px) {
     &__gradient {
       width: 400px;
       height: 163px;
@@ -116,14 +97,21 @@
     }
 
     &__list {
-      width: 400px;
+      width: 100%;
       padding-top: 71px;
       padding-bottom: 120px;
       overflow: hidden;
+      justify-content: center;
     }
 
     &__item {
-      padding: 0 24px;
+      flex: 0 0 100%;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 16px;
+      margin-top: 0;
+      height: auto; /* Вирівнювання висоти на мобільних пристроях */
+      transition: transform 0.3s ease, height 0.3s ease;
     }
 
     &__name {
@@ -133,12 +121,6 @@
 
     &__desk {
       font-size: 14px;
-    }
-
-    &__item,
-    &__item-long {
-      width: 352px; /* Ширина картки для мобільних пристроїв */
-      margin-top: 0; /* Видалити верхній відступ */
     }
 
     article p {
