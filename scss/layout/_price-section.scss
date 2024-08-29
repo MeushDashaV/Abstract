@@ -56,7 +56,9 @@
   &__time {
     font-size: 16px;
     font-weight: 500;
-    margin: 0;
+    text-align: center;
+    margin: 0 auto;
+
     margin-bottom: 40px;
     color: var(--color-seconary);
   }
@@ -68,24 +70,25 @@
   }
 }
 
-
-@media (max-width: 400px) {
+@media (min-width: 340px) and (max-width: 720px) {
   .price-section {
-      &__list {
-        display: block;
-      }
+    &__list {
+      display: block;
+    }
 
-      &__title {
-        width: 110px;
-      }
+    &__title {
+      width: 110px;
+    }
 
-      &__text p {
-        width: 348px;
-        text-align: start;
-      }
+    &__text p {
+      width: 348px;
+      text-align: start;
+    }
 
-      &__item {
-        margin-bottom: 28px;
-      }
+    &__item {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 28px;
+    }
   }
 }

@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 340px) and (max-width: 720px) {
   .footer {
     &__container {
       display: block;

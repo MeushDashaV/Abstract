@@ -65,11 +65,14 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 340px) and (max-width: 720px) {
   .features-section {
     padding-top: 50px;
     &__container {
-      display: block;
+      flex-direction: column; /* Розташовує картки в колонку */
+      align-items: center; /* Центрує картки по горизонталі */
+      justify-content: center; /* Центрує картки по вертикалі */
+      min-height: 100vh;
     }
 
     &__card {

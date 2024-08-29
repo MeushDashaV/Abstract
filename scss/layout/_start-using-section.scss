@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 340px) and (max-width: 720px) {
   .start-using-section {
     &__container {
       width: 400px;
@@ -53,4 +53,13 @@
       margin: 0 auto;
     }
   }
+}
+
+
+@media (max-width: 1285px) {
+.start-using-section {
+  &__container {
+    width: 1150px;
+  }
+}
 }

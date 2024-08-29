@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 340px) and (max-width: 720px) {
   .time-section {
     &__container {
       display: block;

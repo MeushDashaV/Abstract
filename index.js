@@ -60,15 +60,27 @@ document.addEventListener('DOMContentLoaded', () => {
     feedbackBlockFix.classList.add('reviews-section__block');
     article.appendChild(feedbackBlockFix);
 
+    const infoDiv = document.createElement('div');
+    feedbackBlockFix.appendChild(infoDiv);
+
     const name = document.createElement('h3');
     name.classList.add('reviews-section__name');
     name.textContent = feedbackData[index].name;
-    feedbackBlockFix.appendChild(name);
+    infoDiv.appendChild(name);
 
     const profession = document.createElement('p');
     profession.classList.add('reviews-section__desk');
     profession.textContent = feedbackData[index].profession;
-    feedbackBlockFix.appendChild(profession);
+    infoDiv.appendChild(profession);
+
+    const starsDiv = document.createElement('div');
+    starsDiv.classList.add('reviews-section__stars');
+    feedbackBlockFix.appendChild(starsDiv);
+
+    const starsImg = document.createElement('img');
+    starsImg.src = './img/stars.svg'; // Перевірте шлях до зображення
+    starsImg.alt = 'Rating stars';
+    starsDiv.appendChild(starsImg);
 
     const desc = document.createElement('p');
     desc.textContent = feedbackData[index].desc;
