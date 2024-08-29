@@ -6,6 +6,9 @@
   overflow: hidden;
   padding-top: 200px;
   padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -100;
 
   &__container {
     display: flex;
