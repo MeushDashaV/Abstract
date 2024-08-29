@@ -103,12 +103,47 @@
   }
 }
 
-
 @media (max-width: 400px) {
   .reviews-section {
+    &__gradient {
+      width: 400px;
+      height: 163px;
+    }
+
     &__title {
       display: block;
+      padding-bottom: 38px;
+    }
+
+    &__list {
+      width: 352px; /* Переконатися, що ширина в мобільній версії правильна */
+      padding-top: 71px;
+      padding-bottom: 120px;
+
+    }
+
+    &__item {
+      padding: 0 24px;
+    }
+
+    &__name {
+      font-size: 18px;
       color: var(--color-seconary);
+    }
+
+    &__desk {
+      font-size: 14px;
+    }
+
+    &__item,
+    &__item-long {
+      width: 352px; /* Ширина картки для мобільних пристроїв */
+      margin-top: 0; /* Видалити верхній відступ */
+    }
+
+    article p {
+      font-size: 14px;
+      line-height: 1.8;
     }
   }
 }
